@@ -7,7 +7,7 @@ var newDiv = document.createElement("div");
 
 buttonAction.addEventListener("click", function() {
     var input = document.getElementById("txt").value;
-    var answer = String(input);
+    var answer = parseInt(input);
         console.log(answer);
         
         
@@ -25,12 +25,19 @@ buttonAction.addEventListener("click", function() {
         console.log(showMessage);
 
     }
-    else {
+    else if (answer >= 18 && answer <=66) {
         var showMessage = ("Helt rätt ålder!");
         newpara.innerText = (showMessage);
         document.body.appendChild(newDiv);
         console.log(showMessage);
 
+    }
+    else {
+        var showMessage = ("Endast siffror, tack");
+        newpara.innerText = (showMessage);
+        document.body.appendChild(newDiv);
+        console.log(showMessage);
+        
     }
     
 })
