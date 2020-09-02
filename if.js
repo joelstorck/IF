@@ -14,31 +14,25 @@ buttonAction.addEventListener("click", function() {
 
     if(answer < 18) {
         var showMessage = ("Du är för ung!"); 
-        newpara.innerText = (showMessage);
-        document.body.appendChild(newDiv);
-        console.log(showMessage);
+            console.log(showMessage);
     }
     else if (answer > 66) {
         var showMessage = ("Du är för gammal!");
-        newpara.innerText = (showMessage);
-        document.body.appendChild(newDiv);
-        console.log(showMessage);
+            console.log(showMessage);
 
     }
     else if (answer >= 18 && answer <=66) {
         var showMessage = ("Helt rätt ålder!");
-        newpara.innerText = (showMessage);
-        document.body.appendChild(newDiv);
-        console.log(showMessage);
+            console.log(showMessage);
 
     }
     else {
         var showMessage = ("Endast siffror, tack");
-        newpara.innerText = (showMessage);
-        document.body.appendChild(newDiv);
-        console.log(showMessage);
+            console.log(showMessage);
         
     }
-    
+    newpara.innerText = (showMessage);
+    document.body.appendChild(newDiv);
+    console.log(showMessage);
 })
 
